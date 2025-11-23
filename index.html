@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Tarun<span style="color:var(--accent-2)">.</span>Dev</div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero card reveal">
+        <div class="hero-inner">
+          <div class="hero-flex">
+            <div class="hero-left">
+              <div class="intro">
+                <div class="eyebrow">Hello — I'm</div>
+                <h1>Tarun Kumar Chaurasia — <span class="highlight">Full Stack Developer</span></h1>
+                <p class="lead">I build responsive, accessible web experiences. I use modern CSS (Flexbox & Grid), clean HTML structure and JavaScript to bring designs to life.</p>
+                <div class="row" style="margin-top:0.8rem">
+                  <a class="cta" href="#projects">See Projects</a>
+                  <a style="padding:0.45rem 0.6rem;border-radius:0.6rem;background:transparent;border:1px solid rgba(255,255,255,0.04);font-weight:600">Resume</a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-right">
+              <div class="profile-card" aria-hidden="true">
+                <img src="Pfp.jpeg" alt="Profile placeholder" style="border-radius:12px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="reveal delay">
+        <div class="section-head"><h2>About</h2><div class="muted">A short bio</div></div>
+        <div class="about-grid">
+          <div class="card">
+            <p>I am a developer focused on building scalable, responsive frontends and pragmatic backends. I enjoy turning designs into performant code and learning new tools.</p>
+            <ul style="margin-top:0.75rem;color:var(--muted)">
+              <li>Location: India</li>
+              <li>Experience: 2+ years</li>
+              <li>Interests: UX, Performance, Accessibility</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">Contact</h3>
+            <p class="muted">Email: tarunchaurasia04@gmail.com</p>
+            <p class="muted">Phone: +91 8448178917</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="reveal delay">
+        <div class="section-head"><h2>Skills</h2><div class="muted">Technologies & tools</div></div>
+        <div class="skills-grid">
+          <div class="skill"><div class="name">HTML & CSS</div><div class="level">Advanced</div></div>
+          <div class="skill"><div class="name">JavaScript</div><div class="level">Advanced</div></div>
+          <div class="skill"><div class="name">React</div><div class="level">Intermediate</div></div>
+          <div class="skill"><div class="name">Node.js</div><div class="level">Intermediate</div></div>
+          <div class="skill"><div class="name">Git & GitHub</div><div class="level">Advanced</div></div>
+          <div class="skill"><div class="name">CSS Animations</div><div class="level">Intermediate</div></div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal delay">
+        <div class="section-head"><h2>Projects</h2><div class="muted">Select work</div></div>
+        <div class="projects-grid">
+          <article class="project card">
+            <h3>Portfolio Website</h3>
+            <p class="muted">A responsive one-page portfolio built with Flexbox & CSS Grid. Includes subtle animations and accessible markup.</p>
+            <div class="tags" style="margin-top:0.6rem"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div>
+          </article>
+
+          <article class="project card">
+            <h3>Task Manager App</h3>
+            <p class="muted">A small React + Node app demonstrating CRUD operations, authentication, and responsive layout.</p>
+            <div class="tags" style="margin-top:0.6rem"><span class="tag">React</span><span class="tag">Node.js</span></div>
+          </article>
+
+          <article class="project card">
+            <h3>Landing Page</h3>
+            <p class="muted">A marketing landing page with responsive hero, grid features, and smooth scroll interactions.</p>
+            <div class="tags" style="margin-top:0.6rem"><span class="tag">HTML</span><span class="tag">CSS Grid</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal delay">
+        <div class="section-head"><h2>Contact</h2><div class="muted">Send a message</div></div>
+        <div class="card">
+          <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <label class="muted">Name<input name="name" type="text" required placeholder="Your name"></label>
+            <label class="muted">Email<input name="email" type="email" required placeholder="you@example.com"></label>
+            <label class="muted">Message<textarea name="message" required placeholder="Write your message..."></textarea></label>
+            <div style="display:flex;gap:0.5rem;align-items:center;margin-top:0.3rem">
+              <button type="submit" class="cta">Send</button>
+              <div class="muted" style="font-size:0.9rem"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+          <div class="muted">© <strong>Tarun</strong> — Lab Assignment 3</div>
+          <div class="row muted">Links: <a href="#projects">Projects</a> · <a href="#contact">Contact</a></div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>
